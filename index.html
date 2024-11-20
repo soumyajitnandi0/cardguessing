@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Card Guessing Game</h1>
+        <div class="score-container">
+            <p>Score: <span id="score">0</span>
+            || High Score: <span id="highscore">0</span>
+            || Lives: <span id="lives">5</span></p>
+        </div>
+        <div class="cards">
+            <div class="card-container">
+                <div class="card open-card">
+                    <div class="front" data-value="50">50</div>
+                    <div class="back"></div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card closed-card">
+                    <div class="front"></div>
+                    <div class="back"></div>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="higher">Higher</button>
+            <button id="lower">Lower</button>
+        </div>
+        <div>
+            <button id="next">Next</button>
+        </div>
+        <div id="message">Guess hidden number higher or lower than the shown number?</div>
+        <button id="restartBtn">Restart</button>
+        <button id="difficulty">Change Difficulty</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
